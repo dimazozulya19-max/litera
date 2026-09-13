@@ -62,6 +62,7 @@ will be added incrementally to keep the project focused and maintainable.
 
 - [x] Initial project scaffold
 - [x] Base typography (Manrope with Latin and Cyrillic support)
+- [x] Base color palette (dark green, beige, and brown)
 - [x] Project architecture (core routes and shared layout)
 - [ ] UI/UX design system
 - [ ] Database structure

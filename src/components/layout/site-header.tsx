@@ -8,9 +8,12 @@ const navigation = [
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-black/10">
+    <header className="border-b border-border bg-surface">
       <div className="mx-auto flex w-full max-w-6xl items-center gap-6 overflow-x-auto px-6 py-5 sm:px-10">
-        <Link className="shrink-0 text-xl font-semibold tracking-tight" href="/">
+        <Link
+          className="shrink-0 text-xl font-semibold tracking-tight text-primary"
+          href="/"
+        >
           Litera
         </Link>
 
@@ -20,7 +23,7 @@ export function SiteHeader() {
         >
           {navigation.map((item) => (
             <Link
-              className="whitespace-nowrap text-black/60 transition-colors hover:text-black"
+              className="whitespace-nowrap text-muted transition-colors hover:text-primary"
               href={item.href}
               key={item.href}
             >
@@ -28,7 +31,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            className="whitespace-nowrap rounded-full border border-black/15 px-4 py-2 transition-colors hover:bg-black hover:text-white"
+            className="whitespace-nowrap rounded-full border border-primary px-4 py-2 text-primary transition-colors hover:bg-primary hover:text-surface"
             href="/login"
           >
             Увійти
