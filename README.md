@@ -66,6 +66,7 @@ incrementally to keep the project focused and maintainable.
 - [x] Project architecture (core routes and shared layout)
 - [x] UI/UX foundation (typography, palette, button, input, and card)
 - [x] Database structure (profiles, works, library, and progress)
+- [x] Supabase client foundation
 - [ ] Authentication
 - [ ] User profiles
 - [ ] Basic catalog
@@ -133,6 +134,9 @@ The stack may change as Litera evolves.
 pnpm install
 pnpm dev
 ```
+
+When a Supabase project is connected, copy `.env.example` to `.env.local` and
+replace the placeholders with the project URL and publishable key.
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
