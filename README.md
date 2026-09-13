@@ -117,6 +117,7 @@ The foundation currently uses:
 - **Styling:** Tailwind CSS
 - **Typography:** Manrope
 - **Database:** PostgreSQL (Supabase)
+- **Database tooling:** Supabase CLI and versioned SQL migrations
 - **Package manager:** pnpm
 
 Planned technologies:
