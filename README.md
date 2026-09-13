@@ -48,9 +48,11 @@ Litera is planned to support different types of literature from around the world
 
 > 🟡 **Early Development**
 
-Litera is currently at the beginning of development.
+Litera is currently in **Phase 1 — Foundation**.
 
-The architecture, design system, database structure, APIs, and core functionality are being planned and implemented.
+The initial Next.js application scaffold is complete. The architecture, design
+system, database structure, APIs, and core functionality will be added
+incrementally to keep the project focused and maintainable.
 
 ---
 
@@ -58,6 +60,7 @@ The architecture, design system, database structure, APIs, and core functionalit
 
 ### Phase 1 — Foundation
 
+- [x] Initial project scaffold
 - [ ] Project architecture
 - [ ] UI/UX design system
 - [ ] Database structure
@@ -104,11 +107,15 @@ The architecture, design system, database structure, APIs, and core functionalit
 
 ## 🛠️ Technology
 
-The technology stack is currently being designed.
+The foundation currently uses:
 
-Planned technologies may include:
+- **Framework:** Next.js (App Router)
+- **Frontend:** React / TypeScript
+- **Styling:** Tailwind CSS
+- **Package manager:** pnpm
 
-- **Frontend:** Next.js / React / TypeScript
+Planned technologies:
+
 - **Backend:** To be determined
 - **Database:** PostgreSQL
 - **Authentication:** To be determined
@@ -116,6 +123,22 @@ Planned technologies may include:
 - **Storage:** To be determined
 
 The stack may change as Litera evolves.
+
+### Local Development
+
+```bash
+pnpm install
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+Useful checks:
+
+```bash
+pnpm lint
+pnpm build
+```
 
 ---
 
