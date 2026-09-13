@@ -61,6 +61,7 @@ incrementally to keep the project focused and maintainable.
 ### Phase 1 — Foundation
 
 - [x] Initial project scaffold
+- [x] Base typography (Manrope with Latin and Cyrillic support)
 - [ ] Project architecture
 - [ ] UI/UX design system
 - [ ] Database structure
@@ -112,6 +113,7 @@ The foundation currently uses:
 - **Framework:** Next.js (App Router)
 - **Frontend:** React / TypeScript
 - **Styling:** Tailwind CSS
+- **Typography:** Manrope
 - **Package manager:** pnpm
 
 Planned technologies:

@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["cyrillic", "latin"],
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
   title: "Litera",
@@ -8,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="uk" className="h-full">
+    <html lang="uk" className={`${manrope.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">{children}</body>
     </html>
   );
