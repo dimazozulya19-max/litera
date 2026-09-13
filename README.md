@@ -50,9 +50,9 @@ Litera is planned to support different types of literature from around the world
 
 Litera is currently in **Phase 1 — Foundation**.
 
-The initial Next.js application scaffold, core routes, and shared navigation are
-complete. The design system, database structure, APIs, and core functionality
-will be added incrementally to keep the project focused and maintainable.
+The application scaffold, core routes, shared navigation, UI foundation, and
+initial database schema are complete. APIs and core functionality will be added
+incrementally to keep the project focused and maintainable.
 
 ---
 
@@ -65,7 +65,7 @@ will be added incrementally to keep the project focused and maintainable.
 - [x] Base color palette (dark green, beige, and brown)
 - [x] Project architecture (core routes and shared layout)
 - [x] UI/UX foundation (typography, palette, button, input, and card)
-- [ ] Database structure
+- [x] Database structure (profiles, works, library, and progress)
 - [ ] Authentication
 - [ ] User profiles
 - [ ] Basic catalog
@@ -115,15 +115,15 @@ The foundation currently uses:
 - **Frontend:** React / TypeScript
 - **Styling:** Tailwind CSS
 - **Typography:** Manrope
+- **Database:** PostgreSQL (Supabase)
 - **Package manager:** pnpm
 
 Planned technologies:
 
-- **Backend:** To be determined
-- **Database:** PostgreSQL
-- **Authentication:** To be determined
+- **Backend:** Next.js server features with Supabase
+- **Authentication:** Supabase Auth
 - **Deployment:** Vercel
-- **Storage:** To be determined
+- **Storage:** Supabase Storage
 
 The stack may change as Litera evolves.
 
