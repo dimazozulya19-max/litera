@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { Suspense } from "react";
+import { AuthNavigation, LoginLink } from "@/components/auth/auth-navigation";
 
 const navigation = [
   { href: "/catalog", label: "Каталог" },
   { href: "/library", label: "Бібліотека" },
-  { href: "/profile", label: "Профіль" },
 ] as const;
 
 export function SiteHeader() {
@@ -30,12 +31,9 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link
-            className="whitespace-nowrap rounded-full border border-primary px-4 py-2 text-primary transition-colors hover:bg-primary hover:text-surface"
-            href="/login"
-          >
-            Увійти
-          </Link>
+          <Suspense fallback={<LoginLink />}>
+            <AuthNavigation />
+          </Suspense>
         </nav>
       </div>
     </header>

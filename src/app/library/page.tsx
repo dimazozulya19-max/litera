@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import { requireUser } from "@/lib/auth/session";
 
 export const metadata: Metadata = {
   title: "Бібліотека | Litera",
 };
 
-export default function LibraryPage() {
+export default async function LibraryPage() {
+  await requireUser();
+
   return (
     <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16 sm:px-10">
       <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">

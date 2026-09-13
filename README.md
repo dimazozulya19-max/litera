@@ -50,9 +50,10 @@ Litera is planned to support different types of literature from around the world
 
 Litera is currently in **Phase 1 — Foundation**.
 
-The application scaffold, core routes, shared navigation, UI foundation, and
-initial database schema are complete. APIs and core functionality will be added
-incrementally to keep the project focused and maintainable.
+The application scaffold, core routes, shared navigation, UI foundation,
+database schema, and email/password authentication are complete. Catalog and
+library functionality will be added incrementally to keep the project focused
+and maintainable.
 
 ---
 
@@ -67,7 +68,7 @@ incrementally to keep the project focused and maintainable.
 - [x] UI/UX foundation (typography, palette, button, input, and card)
 - [x] Database structure (profiles, works, library, and progress)
 - [x] Supabase client foundation
-- [ ] Authentication
+- [x] Authentication (email/password registration, login, logout, and protected routes)
 - [ ] User profiles
 - [ ] Basic catalog
 
@@ -138,6 +139,13 @@ pnpm dev
 
 When a Supabase project is connected, copy `.env.example` to `.env.local` and
 replace the placeholders with the project URL and publishable key.
+
+For email confirmation with server-side sessions, set the Supabase **Confirm
+signup** email template link to:
+
+```text
+{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email
+```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
