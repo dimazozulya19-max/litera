@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import { SiteHeader } from "@/components/layout/site-header";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="uk" className={`${manrope.variable} h-full`}>
-      <body className="flex min-h-full flex-col antialiased">{children}</body>
+      <body className="flex min-h-full flex-col antialiased">
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }

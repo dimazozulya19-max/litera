@@ -50,9 +50,9 @@ Litera is planned to support different types of literature from around the world
 
 Litera is currently in **Phase 1 — Foundation**.
 
-The initial Next.js application scaffold is complete. The architecture, design
-system, database structure, APIs, and core functionality will be added
-incrementally to keep the project focused and maintainable.
+The initial Next.js application scaffold, core routes, and shared navigation are
+complete. The design system, database structure, APIs, and core functionality
+will be added incrementally to keep the project focused and maintainable.
 
 ---
 
@@ -62,7 +62,7 @@ incrementally to keep the project focused and maintainable.
 
 - [x] Initial project scaffold
 - [x] Base typography (Manrope with Latin and Cyrillic support)
-- [ ] Project architecture
+- [x] Project architecture (core routes and shared layout)
 - [ ] UI/UX design system
 - [ ] Database structure
 - [ ] Authentication

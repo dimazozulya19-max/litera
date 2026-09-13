@@ -1,11 +1,6 @@
 export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-6 py-8 sm:px-10">
-      <header className="flex items-center justify-between border-b border-black/10 pb-6">
-        <span className="text-xl font-semibold tracking-tight">Litera</span>
-        <span className="text-sm text-black/50">Рання розробка</span>
-      </header>
-
       <section className="flex flex-1 flex-col justify-center py-24">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-black/45">
           Your stories. Your library. Your journey.
