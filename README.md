@@ -64,7 +64,7 @@ will be added incrementally to keep the project focused and maintainable.
 - [x] Base typography (Manrope with Latin and Cyrillic support)
 - [x] Base color palette (dark green, beige, and brown)
 - [x] Project architecture (core routes and shared layout)
-- [ ] UI/UX design system
+- [x] UI/UX foundation (typography, palette, button, input, and card)
 - [ ] Database structure
 - [ ] Authentication
 - [ ] User profiles
